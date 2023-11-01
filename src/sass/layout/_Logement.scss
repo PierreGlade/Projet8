@@ -1,0 +1,130 @@
+.information {
+    color: var(--pink);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    margin-top: 25px;
+
+    &-logement-title {
+        font-weight: 500;
+        font-size: 36px;
+    }
+
+    &-logement-location {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    &-logement-tag {
+        font-size: 14px;
+        color: white;
+        background-color: var(--pink);
+        border-radius: 10px;
+        min-width: 115px;
+        padding: 0 20px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+
+        &-container {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+    }
+
+    // -- Media Querys --
+    @media (max-width: 768px) {
+        padding: var(--padding-query);
+    }
+
+    @media (max-width: 540px) {
+        padding: var(--padding-query);
+        margin: 15px 0;
+        display: block;
+
+        &-logement-title {
+            font-size: 18px;
+        }
+
+        &-logement-location {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        &-logement-tag {
+            font-size: 10px;
+            border-radius: 5px;
+            padding: 0 20px;
+            height: 18px;
+
+            &-container {
+                margin: 10px 0 16px;
+            }
+        }
+    }
+}
+
+.host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &-information-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &-information-name {
+        display: flex;
+        align-items: center;
+        text-align: end;
+        width: 50%;
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    &-information-picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+
+    // -- Media Querys --
+    @media (max-width: 540px) {
+        flex-direction: row-reverse;
+        align-items: unset;
+
+        &-rating {
+            display: flex;
+            align-items: center;
+        }
+
+        &-information-name {
+            font-size: 12px;
+            width: 48%;
+            font-weight: 500;
+        }
+
+        &-information-picture {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+.logement-collapse-container {
+    padding: var(--padding);
+    display: flex;
+    gap: 75px;
+
+    @media (max-width: 768px) {
+        padding: var(--padding-query);
+        flex-direction: column;
+        gap: 0;
+    }
+}
