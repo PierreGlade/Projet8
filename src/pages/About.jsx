@@ -24,7 +24,7 @@ const items = [
         id: 4,
         title: "Sécurité",
         texte: `La sécurité est la priorité est la priorité de Kasa aussi bien pour nos hôtes que pour les voyageurs. Chaque logement correspond aux critères de sécurité établis par nos services. 
-      En laissant unenote aussi bien à l'hôte qu'aux locataire,cela permet à nos équipes de vérifier que les standarts sont bien respectés. 
+      En laissant une note aussi bien à l'hôte qu'aux locataire,cela permet à nos équipes de vérifier que les standarts sont bien respectés. 
       Nous organisons également des ateliers sur la sécurité domestiques pour nos hôtes.`,
     },
 ];
